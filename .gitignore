@@ -1,1 +1,14 @@
-"vendor/" 
+# Node.js
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Build output
+dist/
+public/
+build/
+
+# Other
+vendor/
+.DS_Store
+*.env
