@@ -3,7 +3,14 @@
       {
         "src": "package.json",
         "use": "@vercel/static-build",
-        "config": { "zeroConfig": true }
+        "config": {
+          "zeroConfig": true,
+          "distDir": "dist"
+        }
       }
+    ],
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
