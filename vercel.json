@@ -5,7 +5,8 @@
         "use": "@vercel/static-build",
         "config": {
           "zeroConfig": true,
-          "distDir": "dist"
+          "distDir": "dist",
+          "buildCommand": "CI='' npm run build"
         }
       }
     ],
@@ -14,3 +15,4 @@
       { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
+  
