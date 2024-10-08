@@ -1,3 +1,4 @@
+import globby from 'globby';
 document.addEventListener('DOMContentLoaded', function () {
     // Function to initialize before-after slider for each active slide
     function initializeBeforeAfter(slide) {
