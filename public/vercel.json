@@ -1,18 +1,16 @@
 {
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "zeroConfig": true,
-          "distDir": "public",
-          "buildCommand": "CI='' npm run build"
-        }
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "zeroConfig": true,
+        "distDir": "public"
       }
-    ],
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/(.*)", "dest": "/index.html" }
-    ]
-  }
-  
+    }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/index.php" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
