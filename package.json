@@ -3,11 +3,18 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    "build": "cross-env NODE_ENV=production postcss src/input.css -o dist/output.css",
+    "postinstall": "echo PostCSS version: $(npx postcss -v) && echo PostCSS CLI version: $(npx postcss-cli -v)"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.11",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47"
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.11"
+  },
+  "dependencies": {
+    "globby": "^11.0.0",
+    "lilconfig": "^2.0.5"
   }
 }
