@@ -5,7 +5,7 @@
         "use": "@vercel/static-build",
         "config": {
           "zeroConfig": true,
-          "distDir": "dist",
+          "distDir": "public",
           "buildCommand": "CI='' npm run build"
         }
       }
