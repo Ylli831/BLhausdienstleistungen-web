@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "postinstall": "echo Postinstall completed successfully"
+    "build": "npm run tailwind:build",
+    "tailwind:build": "node ./node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./dist/output.css --minify",
+    "postinstall": "echo Postinstall completed successfully",
+    "debug": "ls -la && echo 'Node version:' && node --version && echo 'NPM version:' && npm --version && echo 'Directory structure:' && find . -maxdepth 3 -type d"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
