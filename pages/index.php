@@ -6,6 +6,7 @@
     <title>BL Hausdienstleistungen</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../src/output.css">
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body style="background-color:  #F5F5DC;">
 <?php include('../components/header.php'); ?>
