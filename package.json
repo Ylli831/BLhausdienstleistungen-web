@@ -2,9 +2,9 @@
   "name": "blhaus",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch",
     "build": "npm run tailwind:build",
-    "tailwind:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "tailwind:build": "npx tailwindcss -i ./src/input.css -o ./public/output.css --minify",
     "postinstall": "echo Postinstall completed successfully",
     "debug": "ls -la && echo 'Node version:' && node --version && echo 'NPM version:' && npm --version && echo 'Directory structure:' && find . -maxdepth 3 -type d"
   },
