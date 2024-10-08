@@ -2,10 +2,10 @@
   "name": "blhaus",
   "version": "1.0.0",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "postcss src/input.css -o dist/output.css",
-    "postinstall": "echo PostCSS version: $(postcss -v) && echo PostCSS CLI version: $(postcss-cli -v)"
-  },
+  "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+  "build": "postcss src/input.css -o dist/output.css",
+  "postinstall": "echo PostCSS version: $(postcss -v) && echo PostCSS CLI version: $(postcss-cli -v)"
+},
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
