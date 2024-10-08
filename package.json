@@ -14,6 +14,7 @@
     "tailwindcss": "^3.4.11"
   },
   "dependencies": {
-    "globby": "^11.0.0"
+    "globby": "^11.0.0",
+    "lilconfig": "^3.1.2"
   }
 }
